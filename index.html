@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mononoke</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="app.js" defer></script>
+        
+    </head>
+    <body>
+       
+        <section class="hero is-halfheight" style="background-color: #1C1C26;">
+
+            <div class="hero-body">
+                <div class="container has-text-centered">
+
+                    <p class="title is-1" style="color: #F2F2F2;">
+                        MONONOKE CHARACTER DATABASE
+                    </p>
+
+                    <p class="subtitle is-3" style="color: #D93232;">
+                        Descubre la colección de personajes de la franquicia de Mononoke
+                    </p>
+
+                    <div style="background-color: #2F3159; height: 4px; width: 100px; margin: 1.5rem auto 0;"></div>
+
+                </div>
+            </div>
+
+            <div class="container" style="padding: 0 1.5rem 3rem;">
+                <div class="field">
+                    <div class="control">
+                        <input
+                            class="input"
+                            id="buscador-personajes"
+                            type="text"
+                            placeholder="Buscar personaje..."
+                            style="background-color: #1C1C26; color: #F2F2F2; border-color: #2F3159;"
+                        >
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section" style="background-color: #1C1C26;">
+            <div class="container">
+
+                <div class="level">
+                    <div class="level-left">
+                        <div>
+                            <h2 class="title is-2" style="color: #F2F2F2;">
+                                Personajes
+                            </h2>
+
+                            <p  class="subtitle is-5"
+                                id="contador-personajes"
+                                style="color: #D93232;"
+                            >
+                                6 personajes
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="level-right">
+                        <button
+                            class="button"
+                            id="agregar-personaje"
+                            style="background-color: #D93232; color: #F2F2F2;"
+                        >
+                            Agregar personaje
+                        </button>
+                    </div>
+                </div>
+
+                <form id="formulario-personaje" class="box is-hidden"
+                      style="background-color: #2F3159; color: #F2F2F2;">
+
+                    <div class="field">
+                        <label class="label" for="nombre-personaje">
+                            Nombre
+                        </label>
+                        <div class="control">
+                            <input class="input" id="nombre-personaje"
+                                   type="text" required
+                                   placeholder="Nombre del personaje">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="rol-personaje">Rol</label>
+                        <div class="control">
+                            <div class="select is-fullwidth">
+                                <select id="rol-personaje" required>
+                                    <option value="Protagonista">Protagonista</option>
+                                    <option value="Antagonista">Antagonista</option>
+                                    <option value="Aliado">Aliado</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="imagen-personaje">
+                            URL de imagen (opcional)
+                        </label>
+                        <div class="control">
+                            <input class="input" id="imagen-personaje"
+                                   type="url"
+                                   placeholder="https://ejemplo.com/imagen.jpg">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="descripcion-personaje">
+                            Descripción
+                        </label>
+                        <div class="control">
+                            <textarea class="textarea"
+                                      id="descripcion-personaje"
+                                      required
+                                      placeholder="Describe al personaje"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="button is-danger" type="submit">
+                            Guardar personaje
+                        </button>
+                        <button class="button" id="cancelar-formulario"
+                                type="button">
+                            Cancelar
+                        </button>
+                    </div>
+                </form>
+
+                <div class="columns is-multiline" id="personajes-container">
+                </div>
+
+
+            </div>
+        </section>
+
+
+    </body>
+</html>
