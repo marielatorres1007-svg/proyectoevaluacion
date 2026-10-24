@@ -1,4 +1,3 @@
-
 const fechaInicial = new Date().toISOString();
 
 let personajes = [
@@ -7,7 +6,8 @@ let personajes = [
         nombre: "Kusuriuri — Espada Kon",
         rol: "Protagonista",
         imagen: "",
-        descripcion: "Misterioso Boticario que porta la Espada Exorcista Kon. Investiga las manifestaciones sobrenaturales, busca comprender las emociones que originan a los Mononoke y los purifica cuando descubre su Forma, Verdad y Razón.",
+        descripcion: "Misterioso Boticario que porta la Espada Exorcista Kon.",
+        descripcionDetallada: "El Boticario es un viajero misterioso que investiga fenómenos sobrenaturales relacionados con los Mononoke. Para exorcizarlos, debe descubrir su Forma, Verdad y Razón. Porta la Espada Exorcista Kon, una de las espadas especiales vinculadas al Yin-Yang Hakké.",
         fechaCreacion: fechaInicial
     },
     {
@@ -15,7 +15,8 @@ let personajes = [
         nombre: "Shingi Kon",
         rol: "Protagonista",
         imagen: "",
-        descripcion: "Forma de combate que adopta el Boticario de la espada Kon al desbloquear el poder de la Espada Exorcista. Es la forma que le permite cortar, purificar y apaciguar a los Mononoke.",
+        descripcion: "Forma de combate del Boticario que porta la Espada Kon.",
+        descripcionDetallada: "Shingi Kon es la forma de combate que adopta el Boticario al liberar el poder de la Espada Exorcista Kon. Esta transformación le permite enfrentarse a los Mononoke y realizar el exorcismo una vez descubiertas su Forma, Verdad y Razón.",
         fechaCreacion: fechaInicial
     },
     {
@@ -23,7 +24,8 @@ let personajes = [
         nombre: "Kusuriuri — Espada Ri",
         rol: "Protagonista",
         imagen: "",
-        descripcion: "Boticario portador de la espada Ri, una de las ocho espadas especiales del Yin-Yang Hakké. Ha derrotado a más de cien Mononoke y acude en auxilio del Boticario de la espada Kon.",
+        descripcion: "Boticario portador de la espada Ri, capaz de enfrentarse a numerosos Mononoke.",
+        descripcionDetallada: "Este Boticario porta la Espada Exorcista Ri, distinta de la espada Kon. Se le atribuye haber derrotado a más de cien Mononoke y aparece para auxiliar al Boticario de Kon cuando la situación lo requiere.",
         fechaCreacion: fechaInicial
     },
     {
@@ -31,7 +33,8 @@ let personajes = [
         nombre: "Shingi Ri",
         rol: "Protagonista",
         imagen: "",
-        descripcion: "Forma de combate que adopta el Boticario de la espada Ri para exorcizar Mononoke. Su vestimenta comienza siendo blanca y se vuelve dorada a medida que se llena de poder.",
+        descripcion: "Forma de combate del Boticario que porta la Espada Ri.",
+        descripcionDetallada: "Shingi Ri es la forma de combate asociada al Boticario de la Espada Ri. Su apariencia destaca por una vestimenta inicialmente blanca que adquiere un resplandor dorado conforme aumenta su poder durante el enfrentamiento.",
         fechaCreacion: fechaInicial
     },
     {
@@ -39,7 +42,8 @@ let personajes = [
         nombre: "Asa",
         rol: "Aliado",
         imagen: "",
-        descripcion: "Una de las protagonistas de la primera película. Trabaja en la administración de documentos del Ōoku y busca información sobre la creencia en Mizukami por orden de Botan.",
+        descripcion: "Trabajadora del Ōoku encargada de la administración de documentos.",
+        descripcionDetallada: "Asa es una de las protagonistas de Mononoke: Karakasa. Trabaja en el Ōoku como responsable de documentos oficiales. Por orden de Botan, investiga registros históricos relacionados con la creencia en Omizusama, lo que la involucra en los misterios que rodean al palacio.",
         fechaCreacion: fechaInicial
     },
     {
@@ -47,10 +51,56 @@ let personajes = [
         nombre: "Suikōin",
         rol: "Antagonista",
         imagen: "",
-        descripcion: "Madre del Tennō y figura de gran influencia en el Ōoku. Defiende las tradiciones y el linaje, y considera molesta la intervención del Boticario en el Ōoku.",
+        descripcion: "Madre del Tennō y figura influyente dentro del Ōoku.",
+        descripcionDetallada: "Suikōin es la madre del Tennō y una figura de gran influencia en el Ōoku. Defiende las tradiciones, el linaje y las creencias que sostienen el orden del palacio. La intervención del Boticario representa una amenaza para ese orden y para la autoridad que busca preservar.",
         fechaCreacion: fechaInicial
     }
 ];
+
+const descripcionesActualizadas = {
+    "mononoke-001": {
+        descripcion: "Misterioso Boticario que porta la Espada Exorcista Kon.",
+        descripcionDetallada: "El Boticario es un viajero misterioso que investiga fenómenos sobrenaturales relacionados con los Mononoke. Para exorcizarlos, debe descubrir su Forma, Verdad y Razón. Porta la Espada Exorcista Kon, una de las espadas especiales vinculadas al Yin-Yang Hakké."
+    },
+    "mononoke-002": {
+        descripcion: "Forma de combate del Boticario que porta la Espada Kon.",
+        descripcionDetallada: "Shingi Kon es la forma de combate que adopta el Boticario al liberar el poder de la Espada Exorcista Kon. Esta transformación le permite enfrentarse a los Mononoke y realizar el exorcismo una vez descubiertas su Forma, Verdad y Razón."
+    },
+    "mononoke-003": {
+        descripcion: "Boticario portador de la espada Ri, capaz de enfrentarse a numerosos Mononoke.",
+        descripcionDetallada: "Este Boticario porta la Espada Exorcista Ri, distinta de la espada Kon. Se le atribuye haber derrotado a más de cien Mononoke y aparece para auxiliar al Boticario de Kon cuando la situación lo requiere."
+    },
+    "mononoke-004": {
+        descripcion: "Forma de combate del Boticario que porta la Espada Ri.",
+        descripcionDetallada: "Shingi Ri es la forma de combate asociada al Boticario de la Espada Ri. Su apariencia destaca por una vestimenta inicialmente blanca que adquiere un resplandor dorado conforme aumenta su poder durante el enfrentamiento."
+    },
+    "mononoke-005": {
+        descripcion: "Trabajadora del Ōoku encargada de la administración de documentos.",
+        descripcionDetallada: "Asa es una de las protagonistas de Mononoke: Karakasa. Trabaja en el Ōoku como responsable de documentos oficiales. Por orden de Botan, investiga registros históricos relacionados con la creencia en Omizusama, lo que la involucra en los misterios que rodean al palacio."
+    },
+    "mononoke-006": {
+        descripcion: "Madre del Tennō y figura influyente dentro del Ōoku.",
+        descripcionDetallada: "Suikōin es la madre del Tennō y una figura de gran influencia en el Ōoku. Defiende las tradiciones, el linaje y las creencias que sostienen el orden del palacio. La intervención del Boticario representa una amenaza para ese orden y para la autoridad que busca preservar."
+    }
+};
+
+function actualizarDescripciones() {
+    const personajesActualizados = personajes.map(personaje => {
+        const actualizacion = descripcionesActualizadas[personaje.id];
+
+        if (!actualizacion) {
+            return personaje;
+        }
+
+        return {
+            ...actualizacion,
+            ...personaje
+        };
+    });
+
+    personajes = personajesActualizados;
+    guardarPersonajes();
+}
 
 let idPersonajeEditando = null;
 
@@ -85,7 +135,6 @@ function mostrarPersonajes(lista = personajes) {
         return;
     }
 
-
     lista.forEach(function(personaje) {
         const tarjeta = document.createElement("div");
         tarjeta.classList.add("column", "is-one-third");
@@ -105,6 +154,12 @@ function mostrarPersonajes(lista = personajes) {
                             class="button is-warning is-small"
                             onclick="editarPersonaje('${personaje.id}')">
                             Editar
+                        </button>
+
+                        <button
+                            class="button is-info is-small"
+                            onclick="verDetallesPersonaje('${personaje.id}')">
+                            Ver detalles
                         </button>
 
                         <button
@@ -132,7 +187,6 @@ function mostrarPersonajes(lista = personajes) {
 
         contenedor.appendChild(tarjeta);
     });
-
 }
 
 function filtrarPersonajes() {
@@ -166,7 +220,6 @@ function filtrarPersonajes() {
 document.getElementById("buscador-personajes")
     .addEventListener("input", filtrarPersonajes);
 
-
 const botonAgregar = document.getElementById("agregar-personaje");
 const formulario = document.getElementById("formulario-personaje");
 const botonCancelar = document.getElementById("cancelar-formulario");
@@ -181,7 +234,6 @@ botonAgregar.addEventListener("click", function () {
         "Guardar personaje";
 });
 
-
 botonCancelar.addEventListener("click", function () {
     idPersonajeEditando = null;
     formulario.reset();
@@ -191,6 +243,11 @@ botonCancelar.addEventListener("click", function () {
         "Guardar personaje";
 });
 
+document.getElementById("cerrar-detalles")
+    .addEventListener("click", cerrarDetallesPersonaje);
+
+document.querySelector("#detalle-personaje .modal-background")
+    .addEventListener("click", cerrarDetallesPersonaje);
 
 formulario.addEventListener("submit", function (evento) {
     evento.preventDefault();
@@ -199,6 +256,7 @@ formulario.addEventListener("submit", function (evento) {
     const rol = document.getElementById("rol-personaje").value;
     const imagen = document.getElementById("imagen-personaje").value.trim();
     const descripcion = document.getElementById("descripcion-personaje").value.trim();
+    const descripcionDetallada = document.getElementById("descripcion-detallada").value.trim();
 
     const normalizar = texto => texto
         .normalize("NFD")
@@ -235,6 +293,7 @@ formulario.addEventListener("submit", function (evento) {
         personajes[indice].rol = rol;
         personajes[indice].imagen = imagen;
         personajes[indice].descripcion = descripcion;
+        personajes[indice].descripcionDetallada = descripcionDetallada;
 
         alert("Personaje actualizado correctamente.");
 
@@ -245,6 +304,7 @@ formulario.addEventListener("submit", function (evento) {
             rol: rol,
             imagen: imagen,
             descripcion: descripcion,
+            descripcionDetallada: descripcionDetallada,
             fechaCreacion: new Date().toISOString()
         };
 
@@ -266,6 +326,70 @@ formulario.addEventListener("submit", function (evento) {
     mostrarPersonajes(personajes);
 });
 
+function verDetallesPersonaje(id) {
+    const personaje = personajes.find(function (personaje) {
+        return personaje.id === id;
+    });
+
+    const modal = document.getElementById("detalle-personaje");
+    const contenido = document.getElementById("contenido-detalle");
+    const titulo = document.getElementById("titulo-detalle");
+
+    if (!personaje) {
+        alert("No se encontró el personaje.");
+        return;
+    }
+
+    titulo.textContent = personaje.nombre;
+    contenido.innerHTML = "";
+
+    const distribucion = document.createElement("div");
+    distribucion.classList.add("columns", "is-vcentered");
+
+    const columnaImagen = document.createElement("div");
+    columnaImagen.classList.add("column", "is-5");
+
+    const columnaDescripcion = document.createElement("div");
+    columnaDescripcion.classList.add("column", "is-7");
+
+    if (personaje.imagen) {
+        const imagen = document.createElement("img");
+        imagen.src = personaje.imagen;
+        imagen.alt = personaje.nombre;
+        imagen.style.width = "100%";
+        imagen.style.height = "auto";
+        imagen.style.maxHeight = "65vh";
+        imagen.style.objectFit = "contain";
+
+        columnaImagen.appendChild(imagen);
+    } else {
+        columnaImagen.textContent = "Este personaje no tiene una imagen disponible.";
+    }
+
+    const rol = document.createElement("p");
+    rol.classList.add("subtitle", "is-5");
+    rol.style.color = "#D93232";
+    rol.textContent = personaje.rol;
+
+    const descripcion = document.createElement("p");
+    descripcion.textContent =
+        personaje.descripcionDetallada || personaje.descripcion;
+
+    columnaDescripcion.appendChild(rol);
+    columnaDescripcion.appendChild(descripcion);
+
+    distribucion.appendChild(columnaImagen);
+    distribucion.appendChild(columnaDescripcion);
+    contenido.appendChild(distribucion);
+
+    modal.classList.add("is-active");
+}
+
+function cerrarDetallesPersonaje() {
+    document.getElementById("detalle-personaje")
+        .classList.remove("is-active");
+}
+
 function editarPersonaje(id) {
     const personaje = personajes.find(personaje => personaje.id === id);
 
@@ -280,6 +404,7 @@ function editarPersonaje(id) {
     document.getElementById("rol-personaje").value = personaje.rol;
     document.getElementById("imagen-personaje").value = personaje.imagen;
     document.getElementById("descripcion-personaje").value = personaje.descripcion;
+    document.getElementById("descripcion-detallada").value = personaje.descripcionDetallada || "";
 
     formulario.classList.remove("is-hidden");
 
@@ -309,7 +434,7 @@ function eliminarPersonaje(id) {
     guardarPersonajes();
 
     mostrarPersonajes(filtrarPorBusqueda());
-    
+
     alert("Personaje eliminado correctamente.");
 }
 
@@ -333,7 +458,6 @@ function filtrarPorBusqueda() {
 function guardarPersonajes() {
     localStorage.setItem("mononokePersonajes", JSON.stringify(personajes));
 }
-
 
 function cargarPersonajes() {
     try {
@@ -363,3 +487,5 @@ function cargarPersonajes() {
 }
 
 cargarPersonajes();
+actualizarDescripciones();
+mostrarPersonajes(filtrarPorBusqueda());
