@@ -5,7 +5,7 @@ let personajes = [
         id: "mononoke-001",
         nombre: "Kusuriuri — Espada Kon",
         rol: "Protagonista",
-        imagen: "",
+        imagen: "https://www.mononoke-movie.com/assets/img/character/third/character_chara1.png",
         descripcion: "Misterioso Boticario que porta la Espada Exorcista Kon.",
         descripcionDetallada: "El Boticario es un viajero misterioso que investiga fenómenos sobrenaturales relacionados con los Mononoke. Para exorcizarlos, debe descubrir su Forma, Verdad y Razón. Porta la Espada Exorcista Kon, una de las espadas especiales vinculadas al Yin-Yang Hakké.",
         fechaCreacion: fechaInicial
@@ -14,7 +14,7 @@ let personajes = [
         id: "mononoke-002",
         nombre: "Shingi Kon",
         rol: "Protagonista",
-        imagen: "",
+        imagen: "https://www.mononoke-movie.com/assets/img/character/third/character_chara15.png",
         descripcion: "Forma de combate del Boticario que porta la Espada Kon.",
         descripcionDetallada: "Shingi Kon es la forma de combate que adopta el Boticario al liberar el poder de la Espada Exorcista Kon. Esta transformación le permite enfrentarse a los Mononoke y realizar el exorcismo una vez descubiertas su Forma, Verdad y Razón.",
         fechaCreacion: fechaInicial
@@ -23,7 +23,7 @@ let personajes = [
         id: "mononoke-003",
         nombre: "Kusuriuri — Espada Ri",
         rol: "Protagonista",
-        imagen: "",
+        imagen: "https://www.mononoke-movie.com/assets/img/character/third/character_chara41.png",
         descripcion: "Boticario portador de la espada Ri, capaz de enfrentarse a numerosos Mononoke.",
         descripcionDetallada: "Este Boticario porta la Espada Exorcista Ri, distinta de la espada Kon. Se le atribuye haber derrotado a más de cien Mononoke y aparece para auxiliar al Boticario de Kon cuando la situación lo requiere.",
         fechaCreacion: fechaInicial
@@ -32,30 +32,86 @@ let personajes = [
         id: "mononoke-004",
         nombre: "Shingi Ri",
         rol: "Protagonista",
-        imagen: "",
+        imagen: "https://www.mononoke-movie.com/assets/img/character/third/character_chara42.png",
         descripcion: "Forma de combate del Boticario que porta la Espada Ri.",
         descripcionDetallada: "Shingi Ri es la forma de combate asociada al Boticario de la Espada Ri. Su apariencia destaca por una vestimenta inicialmente blanca que adquiere un resplandor dorado conforme aumenta su poder durante el enfrentamiento.",
+        fechaCreacion: fechaInicial
+    },
+    {
+        id: "mononoke-007",
+        nombre: "Sakashita",
+        rol: "Aliado",
+        imagen: "https://www.mononoke-movie.com/assets/img/character/third/character_chara10.png",
+        descripcion: "Guardia del Ōoku encargado de supervisar la seguridad y las entradas del palacio.",
+        descripcionDetallada: "Sakashita es un guardia del Ōoku responsable de vigilar el movimiento de personas dentro del palacio. Al principio desconfía de las acciones del Boticario, pero su actitud hacia él cambia conforme avanza la historia.",
         fechaCreacion: fechaInicial
     },
     {
         id: "mononoke-005",
         nombre: "Asa",
         rol: "Aliado",
-        imagen: "",
+        imagen: "https://www.mononoke-movie.com/assets/img/character/third/character_chara6.png",
         descripcion: "Trabajadora del Ōoku encargada de la administración de documentos.",
         descripcionDetallada: "Asa es una de las protagonistas de Mononoke: Karakasa. Trabaja en el Ōoku como responsable de documentos oficiales. Por orden de Botan, investiga registros históricos relacionados con la creencia en Omizusama, lo que la involucra en los misterios que rodean al palacio.",
+        fechaCreacion: fechaInicial
+    },
+    {
+        id: "mononoke-008",
+        nombre: "Botan Ōtomo",
+        rol: "Aliado",
+        imagen: "https://www.mononoke-movie.com/assets/img/character/third/character_chara2.png",
+        descripcion: "Funcionaria de alto rango del Ōoku que vela por el orden y la disciplina.",
+        descripcionDetallada: "Botan Ōtomo ocupa el cargo de mayor rango entre las funcionarias del Ōoku, conocido como O-Toshiyori. Es estricta y concede gran importancia a las normas y al equilibrio del palacio. Tras sus experiencias con los Mononoke, permite que el Boticario intervenga cuando surgen fenómenos sobrenaturales.",
+        fechaCreacion: fechaInicial
+    },
+    {
+        id: "mononoke-009",
+        nombre: "Hokuto Mizorogi",
+        rol: "Aliado",
+        imagen: "https://www.mononoke-movie.com/assets/img/character/third/character_chara11.png",
+        descripcion: "Cabeza de la familia Mizorogi y sacerdote de la creencia en Omizusama.",
+        descripcionDetallada: "Hokuto Mizorogi es el jefe de su familia y ejerce como sacerdote de la creencia en Omizusama, una tradición arraigada en el Ōoku. Conoce aspectos relacionados con esta fe y con los extraños acontecimientos que rodean al palacio.",
+        fechaCreacion: fechaInicial
+    },
+    {
+        id: "mononoke-010",
+        nombre: "Tenshi (El emperador)",
+        rol: "Antagonista",
+        imagen: "https://www.mononoke-movie.com/assets/img/character/third/character_chara12.png",
+        descripcion: "Máxima autoridad del shogunato y figura que gobierna el país.",
+        descripcionDetallada: "Tenshi es la máxima autoridad política y el símbolo del poder del shogunato. Una experiencia de su infancia influyó en su manera de entender su posición y sus responsabilidades, dejando su carácter emocionalmente distante. Es amigo de la infancia de Hokuto Mizorogi.",
+        fechaCreacion: fechaInicial
+    },
+    {
+        id: "mononoke-011",
+        nombre: "Sachiko",
+        rol: "Aliado",
+        imagen: "https://www.mononoke-movie.com/assets/img/character/third/character_chara19.png",
+        descripcion: "Esposa de Tenshi y figura central dentro de la corte imperial.",
+        descripcionDetallada: "Sachiko es la esposa oficial de Tenshi y ocupa la posición de Midaidokoro dentro de la corte. Procede de una familia noble de la capital occidental. Su relación con el emperador es compleja y sus experiencias personales afectan profundamente su vida en el palacio.",
         fechaCreacion: fechaInicial
     },
     {
         id: "mononoke-006",
         nombre: "Suikōin",
         rol: "Antagonista",
-        imagen: "",
-        descripcion: "Madre del Tennō y figura influyente dentro del Ōoku.",
-        descripcionDetallada: "Suikōin es la madre del Tennō y una figura de gran influencia en el Ōoku. Defiende las tradiciones, el linaje y las creencias que sostienen el orden del palacio. La intervención del Boticario representa una amenaza para ese orden y para la autoridad que busca preservar.",
+        imagen: "https://www.mononoke-movie.com/assets/img/character/third/character_chara18.png",
+        descripcion: "Madre de Tenshi y figura influyente dentro del Ōoku.",
+        descripcionDetallada: "Suikōin es la madre de Tenshi y una figura de gran influencia en el Ōoku. Defiende las tradiciones, el linaje y las creencias que sostienen el orden del palacio. La intervención del Boticario representa una amenaza para ese orden y para la autoridad que busca preservar.",
+        fechaCreacion: fechaInicial
+    },
+    {
+        id: "mononoke-012",
+        nombre: "Fuki Tokita",
+        rol: "Aliado",
+        imagen: "https://www.mononoke-movie.com/assets/img/character/third/character_chara3.png",
+        descripcion: "Mujer de origen humilde que asciende a una posición importante dentro del Ōoku.",
+        descripcionDetallada: "Fuki Tokita procede de una familia de comerciantes y asciende al rango de Chūrō tras llamar la atención de Tenshi. Su posición y su relación con Botan atraviesan tensiones y cambios a lo largo de la historia. Es una de las protagonistas de Mononoke: Hinezumi.",
         fechaCreacion: fechaInicial
     }
 ];
+
+const ordenInicial = personajes.map(personaje => personaje.id);
 
 const descripcionesActualizadas = {
     "mononoke-001": {
@@ -459,6 +515,7 @@ function guardarPersonajes() {
     localStorage.setItem("mononokePersonajes", JSON.stringify(personajes));
 }
 
+
 function cargarPersonajes() {
     try {
         const datosGuardados = localStorage.getItem("mononokePersonajes");
@@ -475,11 +532,38 @@ function cargarPersonajes() {
             throw new Error("Los datos guardados no son un arreglo.");
         }
 
-        personajes = personajesGuardados;
+        const idsGuardados = new Set(
+            personajesGuardados.map(personaje => personaje.id)
+        );
+
+        const personajesNuevos = personajes.filter(
+            personaje => !idsGuardados.has(personaje.id)
+        );
+
+        personajes = [
+            ...personajesGuardados,
+            ...personajesNuevos
+        ];
+
+        personajes.sort((a, b) => {
+            const indiceA = ordenInicial.indexOf(a.id);
+            const indiceB = ordenInicial.indexOf(b.id);
+
+            if (indiceA === -1 && indiceB === -1) return 0;
+            if (indiceA === -1) return 1;
+            if (indiceB === -1) return -1;
+
+            return indiceA - indiceB;
+        });
+
+        guardarPersonajes();
         mostrarPersonajes();
 
     } catch (error) {
-        alert("Los datos guardados están dañados. Se cargarán los personajes de ejemplo.");
+        alert(
+            "Los datos guardados están dañados. Se cargarán los personajes de ejemplo."
+        );
+
         localStorage.removeItem("mononokePersonajes");
         guardarPersonajes();
         mostrarPersonajes();
